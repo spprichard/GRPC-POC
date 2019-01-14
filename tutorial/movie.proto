@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message Movie {
+
+    enum Genre {
+        COMEDY = 0;
+        ACTION = 1;
+        HORROR = 2;
+        ROMANCE = 3;
+        DRAMA = 4;
+    }
+
+    string title = 1;
+    Genre genre = 2;
+    int32 year = 3;
+}
